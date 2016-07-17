@@ -14,8 +14,9 @@ function redraw (mouse) {
   context.drawImage(image, 0, 0);
   context.beginPath();
   context.rect(0, 0, windowWidth, windowHeight);
-  context.arc(mouse.x, mouse.y, 150, 0, Math.PI*2, true);
+  context.arc(mouse.x, mouse.y, 70, 0, Math.PI*2, true);
   context.clip();
+  context.fillStyle = "rgba(255, 0, 0, 0.3)";
   context.fillRect(0, 0, windowWidth, windowHeight);
 }
 
